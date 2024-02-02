@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="platform">
+      <container class="heading">
+    <h1 id="title">freeCodeCamp Survey Form </h1>
+    <p id="description">Thank you for taking the time to help us improve the platform </p>
+    </container>
+    <form id="survey-form">
+      <div class="form-group">
+      <label for="name" id="name-label">Name:</label>
+        <input 
+        id="name" 
+        name="Mabel" 
+        type="text"
+        placeholder="Enter your name" 
+        required />
+        </div>
+          <div class="form-group">
+            <label for="Email" id="email-label">Email: </label>
+            <input
+            id="email"
+            name="Email"
+            type="email"
+            placeholder="Enter your Email"
+            required/>
+            </div>
+            <div class="form-group">
+              <label for=Age id="number-label">Age (Optional): </label>
+              <input
+              id="number"
+              name="age"
+              type="number"
+              min="10"
+              max="99"
+              placeholder="Age" />
+              </div>
+              <div class="form-group">
+                <label for="current-role">Which option best describes your current role? </label>
+                <select
+                id="dropdown"
+                name="current-role">
+               <option value="">(select one)</option>
+                <option value="1">Student</option>
+                <option value="2">Full Time Job</option>
+                <option value="3">Full Time Learner</option>
+                <option value="4">Prefer Not To Say</option>
+                <option value="2">Other</option>
+                </select>
+                </label>
+                </div>
+                <div class="form-group">
+                <label for="recommendation"> Would you recommend freeCodeCamp to a friend? </label>
+                <label for="Definitely">
+                  <input 
+                  type="radio" 
+                  id="definitely"
+                  value="definitely"
+                  name="recommendation" 
+                  class="inline"
+                  checked /> Definitely</label>
+                <label for="maybe">
+                  <input 
+                  id="maybe" 
+                  type="radio" 
+                  value="maybe"
+                  name="recommendation" 
+                  class="inline" /> Maybe</label>
+                <label for="not-sure">
+                  <input
+                   id="not-sure" 
+                   type="radio" 
+                   value="not-sure"
+                   name="recommendation" 
+                   class="inline" /> Not sure</label>
+                   </div>
+                   <div class="form-group">
+              <label for=favourite-feature> What is your favorite feature of freeCodeCamp? </label>
+              <select
+              id="favourite-feature"
+              name="favourite-feature">
+              <option value="">Select an option</option>
+                <option value="1">Challenges</option>
+                <option value="2">Projects</option>
+                <option value="3">Community</option>
+                <option value="4">Open Source</option>
+                </select>
+                </label>
+                </div>
+                <div class="form-group">
+                 <label for="improvement"> What would you like to see improved? (Check all that apply) </label>
+                <label for="front-end">
+                  <input 
+                  id="front-end" 
+                  type="checkbox" 
+                  name="recommendation" 
+                  value="front-end"
+                  class="inline" /> Front-end Projects</label>
+                   <label for="back-end">
+                  <input 
+                  id="back-end" 
+                  type="checkbox" 
+                  name="recommendation"
+                   value="back-end" 
+                  class="inline" /> Back-end Projects</label>
+                   <label for="data-visualization">
+                  <input
+                id="data-visualization" 
+                  type="checkbox" 
+                  name="recommendation"
+              value="data-visualization" 
+                  class="inline" /> Data Visualization</label>
+                   <label for="challenges">
+                  <input 
+                  id="challenges" 
+                  type="checkbox" 
+                  name="recommendation"
+                   value="challenges" 
+                  class="inline" /> Challenges</label>
+                   <label for="open-source">
+                  <input 
+                  id="open-source" 
+                  type="checkbox" 
+                  name="recommendation"
+                   value="open-source-communities" 
+                  class="inline" /> Open Source Communities</label>
+                  <label for="help-rooms">
+                  <input 
+                  id="help-rooms" 
+                  type="checkbox" 
+                  name="recommendation"
+                   value="gitter-help-rooms" 
+                  class="inline" /> Gitter help rooms</label>
+              <label for="videos">
+                  <input 
+                  id="videos" 
+                  type="checkbox" 
+                  name="recommendation" 
+                   value="videos"
+                  class="inline" /> Videos</label>
+                   <label for="meetups">
+                  <input 
+                  id="meetups" 
+                  type="checkbox" 
+                  name="recommendation"
+                   value="city-meetups" 
+                  class="inline" /> City Meetups</label>
+                   <label for="wiki">
+                  <input 
+                  id="wiki" 
+                  type="checkbox" 
+                  name="recommendation"
+                   value="wiki" 
+                  class="inline" /> Wiki</label>
+                   <label for="forum">
+                  <input 
+                  id="forum" 
+                  type="checkbox" 
+                  name="recommendation"
+                   value="forum" 
+                  class="inline" /> Forum</label>
+                   <label for="additional-courses">
+                  <input 
+                  id="additional-courses" 
+                  type="checkbox" 
+                  name="recommendation"
+                   value="additional-courses" 
+                  class="inline" /> Additional Courses</label>
+                  </div>
+                  <div class="form-group">
+                   <label for="bio">Any comments or suggestions?
+          <textarea id="comments" name="comments" rows="8" cols="40" placeholder="Enter your comments here..."></textarea>
+          </label>
+          </div>
+          <div class="form-group">
+           <button class="submit" id="submit" type="submit">Submit
+             </button>
+         </div>
+         </form>
+         </div>
+         </body>
+         <html>
